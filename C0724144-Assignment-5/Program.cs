@@ -8,31 +8,24 @@ namespace C0724144_Assignment_5
 {
     class Program
     {
-        public static void Main()
-            {
-            Program a = new Program();
-
-            Console.WriteLine("the longest word is : ");
-            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
-        }
-        public string MyFunctionA(string input)
+        static void Main(string[] args)
         {
 
-            // Write a C# program to find the longest word in a string.
-            string[] words = input.Split(' ');
+            Program a = new Program();
 
-            int wordArrayLength = words.Length;
-            int[] wordsLength = new int[wordArrayLength];
-            int a = 0;
-            foreach (var word in words)
+            Console.WriteLine(a.MyfunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical engine"));
+            Console.ReadLine();
+        }
+        public string MyfunctionA(string input)
+        {
+            string[] words = input.Split(' ');
+            int wordArraylength = words.Length;
+            int[] wordsLength = new int[wordArraylength];
+
+            for (int i = 0; i < words.Length; i++)
             {
-                if (word.Length > a)
-                {
-                    Console.WriteLine("gdfsf");
-                }
+                wordsLength[i] = words[i].Length;
             }
-            // loop post condition: we now have array word Length which
-            // contains the lengths of each word
 
             string currentWord = words[0];
             string nextWord;
@@ -42,9 +35,7 @@ namespace C0724144_Assignment_5
                 currentWord = words[y];
                 nextWord = words[y + 1];
             }
-            return "rgsw";
-            // TODO: Use an IF Statement to make sure that variable longest Word
-            // is always set to the Longest Word in the input string
+            return currentWord;
         }
     }
 }
