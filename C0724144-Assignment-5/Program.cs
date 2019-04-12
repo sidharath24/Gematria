@@ -14,7 +14,6 @@ namespace C0724144_Assignment_5
             Console.WriteLine("the longest word is : ");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
-
         public MyFunctionA(string input)
         {
             // Write a C# program to find the longest word in a string.
