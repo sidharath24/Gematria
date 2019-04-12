@@ -8,13 +8,14 @@ namespace C0724144_Assignment_5
 {
     class Program
     {
-        static void Main(string args)
-        {
+        public static void Main()
+            {
             Program a = new Program();
+
             Console.WriteLine("the longest word is : ");
             Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for processing by an Analytical Engine."));
         }
-        public MyFunctionA(string input)
+        public string MyFunctionA(string input)
         {
 
             // Write a C# program to find the longest word in a string.
@@ -22,10 +23,13 @@ namespace C0724144_Assignment_5
 
             int wordArrayLength = words.Length;
             int[] wordsLength = new int[wordArrayLength];
-
+            int a = 0;
             foreach (var word in words)
             {
-                // TODO
+                if (word.Length > a)
+                {
+                    Console.WriteLine("gdfsf");
+                }
             }
             // loop post condition: we now have array word Length which
             // contains the lengths of each word
@@ -38,6 +42,7 @@ namespace C0724144_Assignment_5
                 currentWord = words[y];
                 nextWord = words[y + 1];
             }
+            return "rgsw";
             // TODO: Use an IF Statement to make sure that variable longest Word
             // is always set to the Longest Word in the input string
         }
