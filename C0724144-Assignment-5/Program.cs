@@ -16,6 +16,7 @@ namespace C0724144_Assignment_5
         }
         public MyFunctionA(string input)
         {
+
             // Write a C# program to find the longest word in a string.
             string[] words = input.Split(' ');
 
